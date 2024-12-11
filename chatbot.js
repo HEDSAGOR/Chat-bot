@@ -20,6 +20,9 @@ function sendMessage() {
     botMessage.textContent = 'Bot: ' + botResponse;
     chatLog.appendChild(botMessage);
 
+    // Reproducir la respuesta en voz
+    speak(botResponse);
+
     // Desplazar el chat hacia abajo
     chatLog.scrollTop = chatLog.scrollHeight;
 }
